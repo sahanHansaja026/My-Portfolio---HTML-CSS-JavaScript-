@@ -1,0 +1,101 @@
+body {
+    margin: auto;
+    background: rgb(2,1,23);
+    background: linear-gradient(90deg, rgba(2,1,23,0.894642891336222) 0%, rgba(2,13,25,0.9641106442577031) 99%, rgba(248,245,245,0.9220938375350141) 100%);
+  }
+.container_bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+  }
+.box1{
+    width: 400px;
+    height: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    margin: 0;
+    color:white;
+    transition: transform 1s ease-in-out;
+    border-top: 5px solid aquamarine; /* Hide top border */
+    border-right: 5px solid aquamarine; /* Hide right border */
+    border-left: 5px solid aquamarine; /* Hide left border */
+    border-bottom: 5px solid aquamarine; /* Set bottom border */
+  }
+.box2{
+    width: 1000px;
+    height: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    margin: 100px;
+    margin-top: 0;
+    color:white;
+    transition: transform 1s ease-in-out;
+    border-top: 2px solid aquamarine; /* Hide top border */
+    border-right: 2px solid aquamarine; /* Hide right border */
+    border-left: 2px solid aquamarine; /* Hide left border */
+    border-bottom: 2px solid aquamarine; /* Set bottom border */
+  }
+.avatar {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:1px solid aqua;;
+  }
+.font0{
+    color:white;
+    font-size:23px;
+    }
+.font1{
+  color:white;
+  font-size:18px;
+  }
+.font3{
+    color:white;
+    font-size:12px;
+    }
+hr {
+    border-color: aquamarine; /* Set the color */
+    border-width: 1px; /* Set the width */
+    width: 50%;
+    margin-left: 25%; /* Set the length as a percentage of the parent container's width */
+  }
+.font2{
+    color:white;
+    font-size:15px;
+    }
+.box2 hr {
+    border-color: aqua; /* Set the color */
+    border-width: 1px; /* Set the width */
+    width: 60%;
+    margin-left: 0%; /* Set the length as a percentage of the parent container's width */
+  }
+ul {
+    list-style-type: disc; /* Remove default bullets */
+  }
+ul li {
+    padding-left: 20px; /* Add spacing for the custom bullet */
+  }
+  #downloadButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid aqua; /* Button border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: aquamarine; /* Button background color */
+    color: white; /* Button text color */
+    transition: background-color 0.3s, color 0.3s; /* Transition effect for hover */
+  }
+  
+  #downloadButton:hover {
+    background-color: aquamarine; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+  

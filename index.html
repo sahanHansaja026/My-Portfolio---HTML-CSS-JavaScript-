@@ -1,0 +1,480 @@
+<html lang="en">
+    <head>
+        <link rel="icon" type="png" href="Ephoto360.com_16515755f4475a.png"/>
+        <title>Sahan's portfolio website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#works">Works</a>  
+          <a href="#contact">Contact</a>          
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <br>
+        <div id="home">
+          <div class="para">
+            <u><b>Sahan's portfolio<br> website</b></u>
+          </div>
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+          <script>
+              function setActiveLink() {
+              var navLinks = document.querySelectorAll(".topnav a");
+
+              navLinks.forEach(function (link) {
+                var sectionId = link.getAttribute("href").substring(1);
+                var section = document.getElementById(sectionId);
+
+                if (
+                  section &&
+                  window.scrollY >= section.offsetTop &&
+                  window.scrollY < section.offsetTop + section.offsetHeight
+                ) {
+                  link.classList.add("active");
+                } else {
+                  link.classList.remove("active");
+                }
+              });
+            }
+            window.addEventListener("scroll", setActiveLink);
+          </script>
+          
+          <div class="img-container">
+            <div class="animated-element_profile">
+                <img src="profile-removebg-preview.png">
+            </div>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const animatedElement = document.querySelector('.animated-element_profile');
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animatedElement.classList.add('active');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+    
+                observer.observe(animatedElement);
+            });
+          </script>
+          <div class="light">
+            <font><h3>CREATIVE MIND, CREATIVE WORKS.</h3></font>
+          </div>
+          <div class="main_header">
+            <h1 lang="en">Hi I Am<br> Sahan Hansaja</h1>
+          </div>
+          <div class="intro">
+            <h1>UX / UI DESIGNER</h1>
+          </div>
+            <button class="button"><font color="white">GET STARTED</font></button><br>
+          <hr>
+        </div>
+            
+        <div class="animated-element">
+          <div class="title"id="about">
+            <h2> About Me</h2>
+          </div>
+        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const animatedElement = document.querySelector('.animated-element');
+            const observer = new IntersectionObserver(entries => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  animatedElement.classList.add('active');
+                  observer.unobserve(entry.target);
+                  }
+                });
+              });
+              observer.observe(animatedElement);
+              });
+        </script>
+        <font color="white">
+          <h1>Undergraduate Student</h1>
+          <div class="about">
+            <p>Hi, I’m Sahan Hansaja, a data science enthusiast and a university undergraduate student.
+               I’m passionate about finding insights from data and solving real-world problems with data-driven solutions. 
+               I’m currently pursuing a bachelor’s degree in data science at Sri Lanka Technology Campus (SLTC) University,</p>
+           
+            <p>where I’m learning various skills and tools such as Python, R, SQL, machine learning, statistics, and visualization.
+               I’m also involved in several extracurricular activities related to data science, such as participating in hackathons, 
+               joining online courses, and writing a blog about my projects and learnings. If you want to know more about me or my work,
+               feel free to reach out to me via email at sahanhansaja026@gmail.com or connect with me on LinkedIn or Twitter.</p></font><div>
+               
+              <center>
+                <a href ="w.html"><button class="button"><font color="white">ABOUT ME</font></button></a><br>
+              </center>
+              <hr>
+              <div class="animated-element2">
+                <div class="title"id="works">
+                  <h2> Works</h2>
+                </div>
+                <h3><font color="aquamarine">OUR SERVICES FOR CLIENTS</font></h3>
+              </div>
+                <div class="container">
+                  <div class="box1">
+                    <i class="fa fa-paper-plane" style="font-size:90px;color:aquamarine"></i>
+                    <br>
+                    <h1>UI/UX DESIGN.</h1>
+                    <br>
+                    <p>An effective UI/UX is what captures attention and spreads a clear message. I make sure the design is innovative and neat with all of this.</p>
+                  </div>
+                  <div class="box1"><i class='fa fa-code' style='font-size:90px;color:aquamarine'></i>
+                    <br>
+                    <h1>WEB DEVELOPMENT</h1>
+                    <br>
+                    <p>If you are looking for a developer who’ll take over the research and development of your website, I am a well-established professional 
+                      to help you with this.</p>
+                  </div>
+                  <div class="box1">
+                    <i class="fa fa-laptop" style="font-size:90px;color:aquamarine"></i>
+                    <br>
+                    <h1>APP DEVELOPMENT</h1>
+                    <br>
+                    <p>If you are looking for a user-friendly app that will attract more mobile users, I can help you design and build a platform 
+                      with the latest and trendiest look and feel</p>
+                  </div>
+                </div>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                      const animatedElement = document.querySelector('.animated-element2');
+                      const observer = new IntersectionObserver(entries => {
+                          entries.forEach(entry => {
+                              if (entry.isIntersecting) {
+                                  animatedElement.classList.add('active');
+                                  observer.unobserve(entry.target);
+                              }
+                          });
+                      });
+    
+                      observer.observe(animatedElement);
+                  });    
+              </script>
+              <br><br><br><br>
+              <div class="animated-element3">
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="Ephoto360.com_16515755f4475a.png">
+                      <img src="Ephoto360.com_16515755f4475a.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc1"><h3>Photo Editing</h3>
+                      <p><i>Photoshop photo editer</i></p></div>
+                      <div class="desc2">
+                      <p>Adobe Photoshop use photos editing,and coreldraw softwares are use to editting</p></div>
+                      <center>
+                        <a href="your-link-here">
+                            <button class="btn"><i class="fa fa-folder"> see more...</i></button>
+                        </a>
+                    </center>
+                  </div>
+                </div>
+                </div>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                    const animatedElement = document.querySelector('.animated-element3');
+                    const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                animatedElement.classList.add('active');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }); 
+                    observer.observe(animatedElement);
+                });
+                </script>
+                <div class="animated-element4">
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="web.png">
+                      <img src="web.png" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc1"><h3>Web Design</h3>
+
+                      <p><i>Personal Portfolio Website</i></p></div>
+                      <div class="desc2">
+                      <p>my Personal Portfolio Website , HTML ,CSS and Java script to use to create it</p></div>
+                      <center>
+                        <a href="https://drive.google.com/drive/folders/1IbXMss6wmhPXfuitRNq2EkrPUjZUAhhj?usp=drive_link">
+                            <button class="btn"><i class="fa fa-folder"> see more...</i></button>
+                        </a>
+                    </center>
+                  </div>
+                </div>
+                </div>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                    const animatedElement = document.querySelector('.animated-element4');
+                    const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                animatedElement.classList.add('active');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    });
+                    observer.observe(animatedElement);
+                });
+                </script>
+              <div class="animated-element5">
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="software.jpg">
+                      <img src="software.jpg" alt="Northern Lights" width="600" height="400">
+                    </a>
+                    <div class="desc1"><h3>Sofeware Development</h3>
+
+                      <p><i>Client-Server comunication</i></p></div>
+                      <div class="desc2">
+                      <p>Real Time Stock Market Auction using Python Web-Socket for 2nd semester mini project.</p></div>
+                      <center>
+                        <a href="https://drive.google.com/drive/folders/1sCPzicyGzPjy53GAze8AyZjzWHDFD6Hg?usp=sharing">
+                            <button class="btn"><i class="fa fa-folder"> see more...</i></button>
+                        </a>
+                    </center>
+                  </div>
+                </div>
+
+                <div class="clearfix"></div>
+                </div>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                    const animatedElement = document.querySelector('.animated-element5');
+                    const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                animatedElement.classList.add('active');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    });
+  
+                    observer.observe(animatedElement);
+                });
+                </script>
+          <div class="animated-element7">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="software.jpg">
+                  <img src="software.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc1"><h3>Sofeware Development</h3>
+
+                  <p><i>Client-Server comunication</i></p></div>
+                  <div class="desc2">
+                  <p>Real Time Stock Market Auction using Python Web-Socket</p></div>
+                  <center>
+                    <a href="your-link-here">
+                        <button class="btn"><i class="fa fa-folder"> see more...</i></button>
+                    </a>
+                </center>
+                
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+            </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const animatedElement = document.querySelector('.animated-element7');
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animatedElement.classList.add('active');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                observer.observe(animatedElement);
+            });
+            </script>
+                <br>
+                <div class="remove">.................................................................................................
+                  ....................................................................................................
+                </div>
+                <br><br><br>
+                <hr>
+<div class="animated-element6">
+  <div class="title"id="contact"><h2> Contact</h2></div></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const animatedElement = document.querySelector('.animated-element6');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animatedElement.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+        observer.observe(animatedElement);
+    });
+</script>
+<center>
+  <div class="icon-container">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-twitter"></a></div>
+</center>
+<script>
+  const icon = document.querySelector(".icon-container i");
+  
+  icon.addEventListener("click", () => {
+    icon.classList.toggle("rotate-icon");
+  });
+  
+                      
+</script>
+<div class="container3">
+  <div class="f_h2"><b><i>Contact Me</b></i></div>
+  <form action="submit.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="Submit">
+  </form>
+</div>
+<hr><br><center>
+<font color="aqua"><h1>My Skils</h1></font></center>
+<div class="animated-element_skills">
+  
+  <div class="container_bar">
+    <div class="skill-bars">
+
+      <div class="skill-bar-container_bar">
+        <div class="skill-label">HTML</div>
+        <div class="skill-bar-progress">
+          <div class="skill0-meter">
+              <div class="fill0-meter"></div>
+          </div>
+        </div>
+    </div>
+  
+        <div class="skill-bar-container_bar">
+          <div class="skill-label">CSS</div>
+          <div class="skill-bar-progress">
+            <div class="skill0-meter">
+                <div class="fill0-meter"></div>
+            </div>
+          </div>
+      </div>
+        <div class="skill-bar-container_bar">
+          <div class="skill-label">Python</div>
+          <div class="skill-bar-progress">
+            <div class="skill0-meter">
+                <div class="fill0-meter"></div>
+            </div>
+          </div>
+      </div>
+        <!-- Add more left-side skill bars as needed -->
+    </div>
+  
+    <div class="skill-bars">
+        <div class="skill-bar-container_bar">
+            <div class="skill-label">JavaScript</div>
+            <div class="skill-bar-progress">
+                <div class="skill1-meter">
+                    <div class="fill1-meter"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skill-bar-container_bar">
+          <div class="skill-label">Java</div>
+          <div class="skill-bar-progress">
+            <div class="skill2-meter">
+                <div class="fill2-meter"></div>
+            </div>
+          </div>
+      </div>
+      <div class="skill-bar-container_bar">
+        <div class="skill-label">C</div>
+        <div class="skill-bar-progress">
+            <div class="skill3-meter">
+                <div class="fill3-meter"></div>
+            </div>
+        </div>
+    </div>
+        <!-- Add more right-side skill bars as needed -->
+    </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const animatedElement = document.querySelector('.animated-element_skills');
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  animatedElement.classList.add('active');
+                  observer.unobserve(entry.target);
+              }
+          });
+      });
+
+      observer.observe(animatedElement);
+  });
+
+</script>
+<center>
+  <a href="cv.html"><button class="button"><font color="white">MY CV</font></button></a><br>
+</center>
+<div class="container">
+  <div class="box2">
+    <h1><u>Sahan's portfolio website</u></h1><font size="4px">
+    <p>Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore</p><br></font>
+  </div>
+  <div class="box3">
+    <h1>Contact</h1>    
+    <ul type="disc">
+      <li>1/68, Kabaragala, Ovitigala, Mathugama, Sri Lanka</li>
+      <li>+94 71 773 5442</li>
+      <li>sahanhansaja026@gmail.com</li></ul><br>
+  </div>
+  <div class="box3">
+    <h1>Quick Links</h1>
+    <ul type="disc">
+      <li>Home</li>
+      <li>About Me</li>
+      <li>Works</li>
+      <li>Contact</li></ul><br>
+<br>
+
+  </div>
+  <div class="box3">
+    <h1>Services</h1>
+    <ul type="disc">
+      <li>UI Design</li>
+      <li>Digital Strategy</li>
+      <li>Social Media</li>
+      <li>Content Writing</li></ul><br><br>
+  </div>
+</div>
+<hr>
+<div class="copyright">
+  Copyright © 2023. All rights reserved.<br>
+  <i>M.M.S.HANSAJA</i>
+</div>       
+    </body>
+  </html>
