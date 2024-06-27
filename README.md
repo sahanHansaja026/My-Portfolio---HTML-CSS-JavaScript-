@@ -1,6 +1,7 @@
 # My Portfolio
 
 A personal portfolio website built using HTML, CSS, and JavaScript. This website showcases your projects, skills, and contact information.
+![Homepage](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/web.png)
 
 ## Features
 
@@ -21,12 +22,15 @@ A personal portfolio website built using HTML, CSS, and JavaScript. This website
 .
 ├── index.html
 ├── style.css
-├── Ephoto360.com_16515755f4475a.png
+├── cv.html
+├── cv.css
+├── work.html
 ├── images/
 │   ├── software.jpg
 │   ├── web.png
 │   ├── profile-removebg-preview.png
-│   ├── project3.png
+│   ├── 1693731593756.png
+│   ├── Ephoto360.com_16515755f4475a.png
 └── README.md
 ```
 
@@ -66,19 +70,19 @@ Users can fill out the contact form to send you messages directly.
 
 ### Homepage
 
-![Homepage](images/homepage.png)
+![Homepage](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/web.png)
 
 ### About Section
 
-![About Section](images/about.png)
+![About Section](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/image1.png)
 
 ### Projects Section
 
-![Projects Section](images/projects.png)
+![Projects Section](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/image2.png)
 
 ### Contact Section
 
-![Contact Section](images/contact.png)
+![Contact Section](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/image3.png)
 
 ## Contributing
 
