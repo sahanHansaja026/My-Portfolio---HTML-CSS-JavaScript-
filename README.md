@@ -1,7 +1,6 @@
 # My Portfolio
 
-A personal portfolio website built using HTML, CSS, and JavaScript. This website showcases your projects, skills, and contact information.
-
+A personal portfolio website built using HTML, CSS, and JavaScript. This website showcases my projects, skills, and contact information, providing a professional and interactive way to present my work.
 
 ![Homepage](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/web.png)
 
