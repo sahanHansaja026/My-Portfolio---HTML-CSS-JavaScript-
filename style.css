@@ -1,0 +1,388 @@
+body {
+  background-color: rgb(69, 69, 76);
+}
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.profile {
+  margin-top: 200px;
+  display: flex;
+  margin-left: 200px;
+}
+.profile .texts {
+  flex-direction: column;
+}
+.profile .texts h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: -25px;
+  font-weight: bold;
+}
+.profile .texts h2 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: -20px;
+}
+.profile img {
+  width: 33%;
+  margin-top: -100px;
+  margin-left: 300px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
+.profile .texts button {
+  background-color: transparent;
+  border: 2px solid yellow;
+  width: 250px;
+  height: 35px;
+  color: yellow;
+  font-size: 28px;
+  margin-top: 35px;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+.sections {
+  margin-left: 80px;
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.about {
+  margin-left: 100px;
+  color: white;
+  width: 1100px;
+}
+.about p {
+  font-size: 15px;
+}
+
+.iconset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  height: fit-content;
+  gap: 10px;
+}
+
+.iconset .poster {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(52, 52, 58);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 15px;
+}
+.iconset .poster:hover {
+  background-color: rgb(73, 73, 85);
+}
+.iconset .poster img {
+  max-width: 100%;
+  max-height: 50%;
+  margin-bottom: 5px;
+}
+
+.iconset br {
+  display: flex;
+  width: 100%;
+  content: "";
+}
+
+.portfolio {
+  font-size: 25px;
+  color: white;
+}
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+}
+
+#customers .subtopic {
+  font-size: 11px;
+}
+
+#customers td,
+#customers th {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#customers tr:hover a {
+  color: black;
+}
+
+#customers a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-section {
+  text-align: center;
+  margin: none;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(43, 42, 42);
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #ffffff;
+  margin: 0;
+  position: relative;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0;
+  position: relative;
+}
+
+.contact-header::before,
+.contact-header::after,
+.contact-icon::before,
+.contact-icon::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #e2f200;
+  margin: 0 10px;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.box-wrapper {
+  display: flex;
+  gap: 500px;
+}
+
+.box {
+  width: 400px;
+  height: 50px;
+  background-color: #504f4f;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .fa {
+  margin-right: 10px;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.fa-linkedin {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.fa-whatsapp {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.fa-github {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.end {
+  font-size: 30px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.foot {
+  background-color: white;
+  height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+.textof {
+  margin-top: 65px;
+  font-size: 20px;
+  font-weight: bold;
+}
+h1 {
+  font-weight: bold;
+  font-size: 45px;
+  color: white;
+}
+.btn {
+  background-color: transparent;
+  border: 2px solid yellow;
+  width: 350px;
+  height: 35px;
+  color: yellow;
+  font-size: 28px;
+  margin-top: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .iconset .poster {
+    width: 120px;
+    height: 120px;
+  }
+  .about {
+    display: block;
+    margin-left: 0px;
+    width: auto;
+  }
+  .about p {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 19px;
+  }
+  .containers {
+    display: block;
+  }
+  .end {
+    font-size: 19px;
+  }
+  .foot {
+    font-size: 15px;
+    width: auto;
+  }
+  .textof {
+    font-size: 15px;
+  }
+  .box-wrapper {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .box {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+  .box {
+    width: auto;
+    height: 40px;
+    font-size: 15px;
+    gap: 20px;
+  }
+  .contact-header {
+    font-size: 20px;
+  }
+  #customers {
+    font-size: 12px;
+  }
+  #customers .subtopic {
+    font-size: 8px;
+  }
+  .sections {
+    font-size: 19px;
+    margin-left: 0px;
+  }
+  .profile {
+    margin-top: 50px;
+    margin-left: 0px;
+    display: block;
+  }
+  .profile .texts h1 {
+    font-size: none;
+  }
+  .profile .texts h2 {
+    margin-top: 30px;
+    margin-left: 0px;
+    font-size: 15px;
+  }
+  .profile img {
+    display: block;
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 250px;
+    height: 250px;
+  }
+  .profile .texts button {
+    width: 150px;
+    font-size: 15px;
+  }
+  nav a {
+    font-size: 15px;
+  }
+  .btn {
+    width: 200px;
+    font-size: 18px;
+    height: 25px;
+  }
+}
