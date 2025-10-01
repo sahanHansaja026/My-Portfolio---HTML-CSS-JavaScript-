@@ -1,0 +1,261 @@
+/* Inknut Antiqua font */
+@font-face {
+    font-family: "Inknut Antiqua";
+    src: url("/fonts/InknutAntiqua-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inder";
+    src: url("/fonts/Inder-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inknut Antiqua";
+    src: url("/fonts/InknutAntiqua-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Font variables */
+:root {
+    --font-inknut: "Inknut Antiqua", serif;
+    --font-inder: "Inder", serif;
+    --font-inter: "Inter", serif;
+}
+
+/* Reset default margins/paddings */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+/* Row styles */
+.row {
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 2rem;
+}
+
+.row-firstcolor {
+    background-color: #333446;
+    height: auto;
+}
+
+.splitcontent {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.row-secondcolor {
+    background-color: #2F2F3A;
+    height: 380px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-family: var(--font-inknut);
+}
+
+.yellowbar {
+    background-color: #FFC436;
+    width: 150px;
+    height: 3px;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: #333446;
+    padding: 0;
+    margin-left: -250px;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--font-inknut);
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background-color: #facc15;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 8px;
+}
+
+.secondcontent {
+    width: 550px;
+    height: 150px;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.secondcontent h6 {
+    color: #ffffffa0;
+    font-family: var(--font-inknut);
+    font-weight: 150;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.secondcontent h5 {
+    color: #fff;
+    font-size: 35px;
+    font-family: var(--font-inder);
+    margin: 0;
+    /* remove default top/bottom margin */
+}
+
+.secondcontent p {
+    font-size: 25px;
+    font-weight: 100;
+    font-size: 18px;
+    font-family: var(--font-inter);
+}
+
+.secondcontent a {
+    color: #facc15;
+    font-size: 30px;
+    font-family: var(--font-inder);
+    cursor: pointer;
+}
+
+.thiredcontent {
+    width: 450px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.thiredcontent h6 {
+    color: #ffffffa0;
+    font-family: var(--font-inknut);
+    font-weight: 150;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.thiredcontent p {
+    font-size: 18px;
+    font-weight: 100;
+    font-size: 18px;
+    color: #ffffffa0;
+    font-family: var(--font-inter);
+}
+
+.secflexcontent {
+    display: flex;
+    flex-direction: row;
+}
+
+.thedetails {
+    flex-direction: column;
+    margin-left: 450px;
+}
+
+.additem {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.additem h2 {
+    font-size: 35px;
+    font-weight: 200;
+    font-family: var(--font-inder);
+}
+
+.row-firstcolor2 {
+    background-color: #333446;
+    height: 200px;
+}
+
+.selctionboxcontainer {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    padding-left: 200px;
+    margin-top: 25px;
+}
+
+.selectionbox {
+    width: 250px;
+    height: 250px;
+    background-color: #4B4B5D;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.selectionbox:hover {
+    background-color: #FFC436;
+}
+
+.selectparagraph {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.selectparagraph p {
+    line-height: 0;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: var(--font-inder);
+}
