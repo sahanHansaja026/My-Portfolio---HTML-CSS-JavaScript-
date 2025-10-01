@@ -1,7 +1,58 @@
+"use client";
 import Image from "next/image";
-
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const fullText = `As a passionate Software Engineering undergraduate, I’m constantly exploring new technologies and building projects that solve real-world problems. From web platforms to mobile apps and AI integration, I enjoy turning ideas into impactful solutions.`;
+  const [displayedText, setDisplayedText] = useState("");
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setDisplayedText((prev) => prev + fullText[index]);
+      index++;
+      if (index === fullText.length) clearInterval(interval);
+    }, 20); // Adjust speed (milliseconds) here
+    return () => clearInterval(interval);
+  }, []);
+  useEffect(() => {
+    const items = document.querySelectorAll(".additem");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    items.forEach((item) => observer.observe(item));
+  }, []);
+
+  useEffect(() => {
+    const blogItems = document.querySelectorAll(".blog-item");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const target = entry.target as HTMLElement; // cast to HTMLElement
+            const index = Array.from(blogItems).indexOf(entry.target);
+            target.style.transitionDelay = `${index * 0.2}s`; // stagger delay
+            target.classList.add("slide-in");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    blogItems.forEach((item) => observer.observe(item));
+  }, []);
+
+
+
   return (
     <main>
       {/* First row: Hero section */}
@@ -25,12 +76,10 @@ export default function Home() {
           <div className="secondcontent">
             <h6>- Introduction</h6>
             <h5>
-              Full Stack Developer and UX/UI Designer, base in<br/>
+              Full Stack Developer and UX/UI Designer, base in<br />
               Sri Lanka
             </h5>
-            <p>
-              As a passionate Software Engineering undergraduate, I’m constantly exploring new technologies and building projects that solve real-world problems. From web platforms to mobile apps and AI integration, I enjoy turning ideas into impactful solutions
-            </p>
+            <p>{displayedText}</p>
             <a>My Journey →</a>
           </div>
         </div>
@@ -43,7 +92,7 @@ export default function Home() {
           <div className="thiredcontent">
             <h6>- About Me</h6>
             <p>“Hi, I’m Sahan Hansaja, a Software Engineering undergraduate at SLTC Research University. I love building modern web and mobile applications, exploring AI integration, and solving real-world problems through technology”</p>
-            
+
             <br />
             <Image
               src="/images/profile.png"
@@ -112,17 +161,97 @@ export default function Home() {
               <p>Designer</p>
             </div>
           </div>
-          <div className="selectionbox">
-            <Image
-              src="/images/youtube.png"
-              alt="My Profile"
-              width={55}
-              height={60}
-            />
-            <div className="selectparagraph">
-              <p>Content</p>
-              <p>Creator</p>
+          <a href="https://youtube.com/@baniya-mark?si=t2mlz73lO-WjfYKD">
+            <div className="selectionbox">
+              <Image
+                src="/images/youtube.png"
+                alt="My Profile"
+                width={55}
+                height={60}
+              />
+              <div className="selectparagraph">
+                <p>Content</p>
+                <p>Creator</p>
+              </div>
             </div>
+          </a>
+        </div>
+      </div>
+      <div className="row row-firstcolor3">
+        <div className="fourthcontent">
+          <h6>- About Me</h6>
+          <h3>
+            All Creative Works,<br />
+            Selected Projects.
+          </h3>
+          <a>Explore More →</a>
+        </div>
+        <div className="imagecontainers1">
+          <div className="subimages">
+            <Image
+              src="/images/image1.png"
+              alt="My Profile"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="row row-firstcolor4">
+        <div className="seconimage">
+          <div className="subimages">
+            <Image
+              src="/images/image2.png"
+              alt="My Profile"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="row row-firstcolor4">
+        <div className="thirdimage">
+          <div className="subimages">
+            <Image
+              src="/images/image3.png"
+              alt="My Profile"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="row row-secondcolor2">
+        <div className="fifthcontent">
+          <h6>- Blog</h6>
+          <h3>
+            What’s new ?<br />
+            My blog and news.
+          </h3>
+        </div>
+        <div className="blog-list">
+          <div className="blog-item">
+            <span className="blog-date"><a href="https://medium.com/@sahanhansaja026/️-smart-parking-detection-using-esp32-fastapi-postgresql-0cf20c1e64fe">Sep 08 . Blog</a></span>
+            <span className="blog-title"><a href="https://medium.com/@sahanhansaja026/️-smart-parking-detection-using-esp32-fastapi-postgresql-0cf20c1e64fe">Smart Parking Detection using ESP32, FastAPI & PostgreSQL</a></span>
+            <span className="blog-arrow"><a href="https://medium.com/@sahanhansaja026/️-smart-parking-detection-using-esp32-fastapi-postgresql-0cf20c1e64fe">→</a></span>
+          </div>
+
+          <div className="blog-item">
+            <span className="blog-date"><a href="https://medium.com/@sahanhansaja026/creating-a-backend-with-mongodb-and-firebase-6f192a1abfc9">May 06 . Blog</a></span>
+            <span className="blog-title"><a href="https://medium.com/@sahanhansaja026/creating-a-backend-with-mongodb-and-firebase-6f192a1abfc9">Creating a Backend with MongoDB and Firebase: File Storage Meets Data Management</a></span>
+            <span className="blog-arrow"><a href="https://medium.com/@sahanhansaja026/creating-a-backend-with-mongodb-and-firebase-6f192a1abfc9">→</a></span>
+          </div>
+
+          <div className="blog-item">
+            <span className="blog-date"><a href="https://youtu.be/F4Yb2p6bK7k">Apr 26 . Vlog</a></span>
+            <span className="blog-title"><a href="https://youtu.be/F4Yb2p6bK7k">Deploying My React App with GitHub Actions & AWS S3 What I Learned</a></span>
+            <span className="blog-arrow"><a href="https://youtu.be/F4Yb2p6bK7k">→</a></span>
+          </div>
+
+          <div className="blog-item">
+            <span className="blog-date"><a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">Sep 09 . Blog</a></span>
+            <span className="blog-title"><a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">Dynamic Search Bar for a MERN Stack Website</a></span>
+            <span className="blog-arrow"><a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">→</a></span>
           </div>
         </div>
       </div>
