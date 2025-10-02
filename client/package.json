@@ -1,16 +1,15 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true,
-"scripts": {
-  "start": "next dev",
-  "build": "next build",
-  "start-prod": "next start",
-  "lint": "next lint",
-  "export": "next export",
-  "out": "next build && next export && touch ./out/.nojekyll",
-  "predeploy": "npm run out",
-  "deploy": "npm run predeploy && gh-pages -d out --dotfiles"
+  "private": true,"homepage": "https://sahanHansaja026.github.io/My-Portfolio---HTML-CSS-JavaScript-",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "next lint",
+    "export": "next build",
+   "out": "next build && echo > ./out/.nojekyll",
+    "predeploy": "npm run out",
+    "deploy": "npm run predeploy && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
