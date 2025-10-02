@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, FormEvent } from "react";
 
 export default function Home() {
   const fullText = `As a passionate Software Engineering undergraduate, I’m constantly exploring new technologies and building projects that solve real-world problems. From web platforms to mobile apps and AI integration, I enjoy turning ideas into impactful solutions.`;
@@ -51,8 +51,74 @@ export default function Home() {
     blogItems.forEach((item) => observer.observe(item));
   }, []);
 
+  const [status, setStatus] = useState<"success" | "error" | "">("");
 
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    const action =
+      "https://docs.google.com/forms/d/e/1FAIpQLSd08_5tv2FVAghqLuWLLBOCb82EZQ5STn1p5zBt6llk_MIhMA/formResponse";
+
+    try {
+      await fetch(action, {
+        method: "POST",
+        mode: "no-cors",
+        body: data,
+      });
+      setStatus("success");
+      form.reset();
+    } catch (err) {
+      console.error("Error submitting form", err);
+      setStatus("error");
+    }
+  };
+
+  useEffect(() => {
+    const formFields = document.querySelectorAll(".contactinfo .field");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            formFields.forEach((field, index) => {
+              const el = field as HTMLElement;
+              setTimeout(() => {
+                el.classList.add("animate");
+              }, index * 200); // 0.2s stagger
+            });
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (formFields.length) observer.observe(formFields[0]);
+  }, []);
+
+  useEffect(() => {
+    const images = document.querySelectorAll(".subimages");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const target = entry.target as HTMLElement;
+            const index = Array.from(images).indexOf(entry.target);
+            target.style.transitionDelay = `${index * 0.2}s`; // stagger animation
+            target.classList.add("animate");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    images.forEach((img) => observer.observe(img));
+  }, []);
+
+  
   return (
     <main>
       {/* First row: Hero section */}
@@ -253,6 +319,76 @@ export default function Home() {
             <span className="blog-title"><a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">Dynamic Search Bar for a MERN Stack Website</a></span>
             <span className="blog-arrow"><a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">→</a></span>
           </div>
+        </div>
+      </div>
+      <div className="row row-firstcolor6">
+        <div className="contactpage">
+          <div className="sixthcontent">
+            <h6>- About Me</h6>
+            <h3>
+              Got a project ?<br />
+              Let’s talk.
+            </h3>
+            <a href="mailto:sahanhansaja026@gmail.com?subject=Hello&body=Hi Sahan,">Email Me →</a>
+          </div>
+          <div className="contactinfo">
+            <h3>Estimate your project ?<br />
+              Let me know hear.</h3>
+            <form onSubmit={handleSubmit}>
+              <div className="field">
+                <div className="lable">What’s your name ?</div>
+                <input type="text" name="entry.1191268187" required />
+              </div>
+
+              <div className="field">
+                <div className="lable">What’s your Email ?</div>
+                <input type="email" name="entry.1389639083" required />
+              </div>
+
+              <div className="field submitbtn">
+                <input type="submit" value="Tell Me →" />
+              </div>
+
+              {status === "success" && (
+                <p className="text-green-500 text-lg mt-2">😊</p>
+              )}
+              {status === "error" && (
+                <p className="text-red-500 text-lg mt-2">😢</p>
+              )}
+            </form>
+          </div>
+        </div>
+      </div>
+      <div className="row row-firstcolor7">
+        <div className="centerfooter">
+          <p>Thanks for scrolling </p>
+        </div>
+        <div className="iconbox">
+          <a href="https://github.com/sahanHansaja026">
+            <Image
+              src="/images/github.png"
+              alt="github"
+              width={35}
+              height={35}
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/sahan-hansaja-35502b256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bt8f9pDeCSOCGOCvJVvJ1Dg%3D%3D">
+            <Image
+              src="/images/linkdin.png"
+              alt="linkdin"
+              width={35}
+              height={35}
+            />
+          </a>
+          <a href="https://youtube.com/@baniya-mark?si=t2mlz73lO-WjfYKD">
+            <Image
+              src="/images/youtube.png"
+              alt="YouTube"
+              width={35}
+              height={35}
+            />
+          </a>
+
         </div>
       </div>
     </main>

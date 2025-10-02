@@ -337,6 +337,7 @@ body {
     flex-direction: column;
     padding-left: 200px;
     padding-top: 55px;
+    width: 450px;
 }
 
 .fifthcontent h6 {
@@ -364,9 +365,9 @@ body {
 .blog-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
-    padding-left: 200px;
+    padding-left: 150px;
     padding-top: 55px;
 }
 
@@ -410,6 +411,7 @@ body {
 .blog-arrow:hover {
     transform: translateX(5px);
 }
+
 .additem {
     opacity: 0;
     transform: translateY(30px);
@@ -420,6 +422,7 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
 .blog-item {
     opacity: 0;
     transform: translateX(-50px);
@@ -431,4 +434,154 @@ body {
     opacity: 1;
     transform: translateX(0);
     /* final position */
+}
+
+.row-firstcolor6 {
+    background-color: #333446;
+    height: 350px;
+}
+
+.contactpage {
+    display: flex;
+    flex-direction: row;
+}
+
+.sixthcontent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-top: 55px;
+}
+
+.sixthcontent h6 {
+    color: #ffffffa0;
+    font-family: var(--font-inknut);
+    font-weight: 150;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.sixthcontent h3 {
+    font-size: 25px;
+    font-weight: 200;
+    font-family: var(--font-inder);
+}
+
+.sixthcontent a {
+    color: #facc15;
+    font-size: 25px;
+    font-family: var(--font-inder);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 500px;
+    padding-top: 55px;
+}
+
+.contactinfo h3 {
+    font-size: 35px;
+    font-family: var(--font-inder);
+    font-weight: 50;
+}
+
+form {
+    display: contents;
+}
+
+form .lable {
+    font-size: 20px;
+    font-family: var(--font-inder);
+    font-weight: 100;
+}
+
+form input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding-top: 5px;
+    margin: 4px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid #ffffff3d;
+    border-radius: 0;
+    background-color: transparent;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: var(--font-inder);
+}
+
+.submitbtn {
+    width: 100%;
+    text-align: right;
+}
+
+input[type=submit] {
+    width: fit-content;
+    color: #facc15;
+    font-size: 25px;
+    background-color: transparent;
+    font-family: var(--font-inder);
+    cursor: pointer;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.row-firstcolor7 {
+    background-color: #333446;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.centerfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.centerfooter p {
+    font-size: 25px;
+}
+
+.iconbox {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.iconbox a {
+    cursor: pointer;
+}
+.contactinfo .field {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.5s ease-out;
+}
+
+.contactinfo .field.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+.subimages {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    transition: all 0.8s ease-out;
+}
+
+.subimages.animate {
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
