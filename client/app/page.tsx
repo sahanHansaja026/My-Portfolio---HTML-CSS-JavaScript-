@@ -161,7 +161,7 @@ export default function Home() {
 
             <br />
             <Image
-              src="/images/profile.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/profile.png`}
               alt="My Profile"
               width={240}
               height={250}

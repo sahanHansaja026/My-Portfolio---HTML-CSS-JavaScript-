@@ -1,28 +1,28 @@
 /* Inknut Antiqua font */
 @font-face {
     font-family: "Inknut Antiqua";
-    src: url("/fonts/InknutAntiqua-Regular.ttf") format("truetype");
+    src: url("My-Portfolio---HTML-CSS-JavaScript-/fonts/InknutAntiqua-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inder";
-    src: url("/fonts/Inder-Regular.ttf") format("truetype");
+    src: url("My-Portfolio---HTML-CSS-JavaScript-/fonts/Inder-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    src: url("My-Portfolio---HTML-CSS-JavaScript-/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inknut Antiqua";
-    src: url("/fonts/InknutAntiqua-Bold.ttf") format("truetype");
+    src: url("My-Portfolio---HTML-CSS-JavaScript-/fonts/InknutAntiqua-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
