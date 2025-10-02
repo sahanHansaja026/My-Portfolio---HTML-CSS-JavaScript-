@@ -1,12 +1,11 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
- output: "export",           
-  basePath: "/My-Portfolio---HTML-CSS-JavaScript-",
-  assetPrefix: "./",
-  images: {
-    unoptimized: true, // required for next/image in static export
-  },
+/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+const nextConfig = {
+  reactStrictMode: false,
+  trailingSlash: true,
+  assetPrefix: isProd ? '/My-Portfolio---HTML-CSS-JavaScript-/' : '',
+  basePath: isProd ? '/My-Portfolio---HTML-CSS-JavaScript-' : '',
+  output: 'export',
 };
 
-export default nextConfig;
+module.exports = nextConfig
