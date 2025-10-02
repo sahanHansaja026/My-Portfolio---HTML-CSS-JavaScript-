@@ -1,9 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',           // enables static export
-  basePath: '/My-Portfolio---HTML-CSS-JavaScript-',
-  assetPrefix: '/My-Portfolio---HTML-CSS-JavaScript-/', // add this
+ output: "export",           
+  basePath: "/My-Portfolio---HTML-CSS-JavaScript-",
+  assetPrefix: "/My-Portfolio---HTML-CSS-JavaScript-/",
+  images: {
+    unoptimized: true, // required for next/image in static export
+  },
 };
 
 export default nextConfig;
