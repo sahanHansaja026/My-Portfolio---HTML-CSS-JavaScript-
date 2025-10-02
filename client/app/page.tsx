@@ -170,7 +170,7 @@ export default function Home() {
           <div className="thedetails">
             <div className="additem">
               <Image
-                src="/images/pluse.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/pluse.png`}
                 alt="My Profile"
                 width={45}
                 height={50}
@@ -179,7 +179,7 @@ export default function Home() {
             </div>
             <div className="additem">
               <Image
-                src="/images/pluse.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/pluse.png`}
                 alt="My Profile"
                 width={45}
                 height={50}
@@ -188,7 +188,7 @@ export default function Home() {
             </div>
             <div className="additem">
               <Image
-                src="/images/pluse.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/pluse.png`}
                 alt="My Profile"
                 width={45}
                 height={50}
@@ -205,7 +205,7 @@ export default function Home() {
         <div className="selctionboxcontainer">
           <div className="selectionbox">
             <Image
-              src="/images/box.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/box.png`}
               alt="My Profile"
               width={55}
               height={60}
@@ -217,7 +217,7 @@ export default function Home() {
           </div>
           <div className="selectionbox">
             <Image
-              src="/images/pen.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/pen.png`}
               alt="My Profile"
               width={55}
               height={60}
@@ -230,7 +230,7 @@ export default function Home() {
           <a href="https://youtube.com/@baniya-mark?si=t2mlz73lO-WjfYKD">
             <div className="selectionbox">
               <Image
-                src="/images/youtube.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/youtube.png`}
                 alt="My Profile"
                 width={55}
                 height={60}
@@ -255,7 +255,7 @@ export default function Home() {
         <div className="imagecontainers1">
           <div className="subimages">
             <Image
-              src="/images/image1.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/image1.png`}
               alt="My Profile"
               fill
               className="object-cover"
@@ -267,7 +267,7 @@ export default function Home() {
         <div className="seconimage">
           <div className="subimages">
             <Image
-              src="/images/image2.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/image2.png`}
               alt="My Profile"
               fill
               className="object-cover"
@@ -279,7 +279,7 @@ export default function Home() {
         <div className="thirdimage">
           <div className="subimages">
             <Image
-              src="/images/image3.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/image3.png`}
               alt="My Profile"
               fill
               className="object-cover"
@@ -366,7 +366,7 @@ export default function Home() {
         <div className="iconbox">
           <a href="https://github.com/sahanHansaja026">
             <Image
-              src="/images/github.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/github.png`}
               alt="github"
               width={35}
               height={35}
@@ -374,7 +374,7 @@ export default function Home() {
           </a>
           <a href="https://www.linkedin.com/in/sahan-hansaja-35502b256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bt8f9pDeCSOCGOCvJVvJ1Dg%3D%3D">
             <Image
-              src="/images/linkdin.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/linkdin.png`}
               alt="linkdin"
               width={35}
               height={35}
@@ -382,7 +382,7 @@ export default function Home() {
           </a>
           <a href="https://youtube.com/@baniya-mark?si=t2mlz73lO-WjfYKD">
             <Image
-              src="/images/youtube.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/youtube.png`}
               alt="YouTube"
               width={35}
               height={35}
