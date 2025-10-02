@@ -4,12 +4,16 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   reactStrictMode: false,
   trailingSlash: true,
-  output: 'export', // ✅ replaces next export
+  output: 'export',
   images: {
-    unoptimized: true, // ✅ required for static hosting
+    unoptimized: true,
   },
-  assetPrefix: isProd ? '/My-Portfolio---HTML-CSS-JavaScript-/' : '',
+  assetPrefix: isProd ? '/My-Portfolio---HTML-CSS-JavaScript-' : '',
   basePath: isProd ? '/My-Portfolio---HTML-CSS-JavaScript-' : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/My-Portfolio---HTML-CSS-JavaScript-' : '',
+  },
 };
 
 module.exports = nextConfig;
+
