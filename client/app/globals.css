@@ -1,32 +1,11 @@
-@font-face {
-    font-family: "Inknut Antiqua";
-    src: url("../public/fonts/InknutAntiqua-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
+/* =============================
+   ✅ GOOGLE FONT IMPORTS
+   ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&family=Inder&family=Inter:wght@400&display=swap');
 
-@font-face {
-    font-family: "Inder";
-    src: url("../public/fonts/Inder-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url("../public/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Inknut Antiqua";
-    src: url("../public/fonts/InknutAntiqua-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
-
-/* Font variables */
+/* =============================
+   ✅ FONT VARIABLES
+   ============================= */
 :root {
     --font-inknut: "Inknut Antiqua", serif;
     --font-inder: "Inder", serif;
