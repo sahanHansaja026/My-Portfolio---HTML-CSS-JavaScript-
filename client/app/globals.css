@@ -572,7 +572,10 @@ input[type=submit] {
 }
 
 /* 📱 Mobile Nav */
-@media (max-width: 600px) {
+/* 📱 Mobile Nav for specific sizes */
+@media screen and (width: 360px) and (height: 800px),
+screen and (width: 390px) and (height: 844px),
+screen and (width: 393px) and (height: 873px) {
 
     .navbar-container {
         display: none;
