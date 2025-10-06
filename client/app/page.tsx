@@ -132,7 +132,7 @@ export default function Home() {
         </div>
 
       </div>
-      <div className="row row-firstcolor">
+      <div className="row row-firstcolor02">
         <div className="splitcontent">
           <div className="content">
             <p>Sahan</p>
@@ -165,6 +165,7 @@ export default function Home() {
               alt="My Profile"
               width={240}
               height={250}
+              className="myhideprofile1"
             />
           </div>
           <div className="thedetails">

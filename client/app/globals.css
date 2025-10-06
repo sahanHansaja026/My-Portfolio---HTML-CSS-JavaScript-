@@ -35,6 +35,11 @@ body {
     height: auto;
 }
 
+.row-firstcolor02 {
+    height: 450px;
+    background-color: #333446;
+}
+
 .splitcontent {
     display: flex;
     flex-direction: row;
@@ -543,6 +548,7 @@ input[type=submit] {
 .iconbox a {
     cursor: pointer;
 }
+
 .contactinfo .field {
     opacity: 0;
     transform: translateX(-50px);
@@ -553,6 +559,7 @@ input[type=submit] {
     opacity: 1;
     transform: translateX(0);
 }
+
 .subimages {
     opacity: 0;
     transform: translateY(30px) scale(0.95);
@@ -562,4 +569,84 @@ input[type=submit] {
 .subimages.animate {
     opacity: 1;
     transform: translateY(0) scale(1);
+}
+
+/* 📱 Mobile Nav */
+@media (max-width: 600px) {
+
+    .navbar-container {
+        display: none;
+    }
+
+    .content {
+        font-size: 40px;
+        padding-left: 0;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .yellowbar {
+        width: 80px;
+        height: 2px;
+    }
+
+    .splitcontent {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .secondcontent {
+        width: auto;
+        margin-left: 15px;
+        width: 280px;
+        margin-top: 15px;
+    }
+
+    .secondcontent h6 {
+        font-size: 13px;
+    }
+
+    .secondcontent h5 {
+        font-size: 20px;
+    }
+
+    .secondcontent p {
+        font-size: 13px;
+    }
+
+    .secondcontent a {
+        font-size: 20px;
+    }
+
+    .secflexcontent {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        margin-left: 15px;
+    }
+
+    .thiredcontent {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thiredcontent h6 {
+        font-size: 13px;
+    }
+
+    .myhideprofile1 {
+        width: 155px;
+        height: 155px;
+        margin-left: 160px;
+    }
+
+    .thiredcontent p {
+        font-size: 15px;
+    }
+}
+
+.myhideprofile2 {
+    display: none;
 }
