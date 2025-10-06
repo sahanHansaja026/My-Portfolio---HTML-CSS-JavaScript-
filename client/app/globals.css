@@ -572,7 +572,7 @@ input[type=submit] {
 }
 
 /* 📱 Mobile Nav */
-@media (width <= 800px) {
+@media (width <= 874px) {
 
     .navbar-container {
         display: none;
