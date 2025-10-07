@@ -572,7 +572,7 @@ input[type=submit] {
 }
 
 /* 📱 Mobile Nav */
-@media (width <= 874px) {
+@media (width <=874px) {
 
     .navbar-container {
         display: none;
@@ -636,6 +636,10 @@ input[type=submit] {
         font-size: 13px;
     }
 
+    .row-secondcolor {
+        height: 650px;
+    }
+
     .myhideprofile1 {
         width: 155px;
         height: 155px;
@@ -644,6 +648,52 @@ input[type=submit] {
 
     .thiredcontent p {
         font-size: 15px;
+    }
+
+    .thedetails {
+        margin-left: 0px;
+        padding-top: 250px;
+    }
+
+    .additem {
+        gap: 15px;
+        width: 325x;
+    }
+
+    .additem h2 {
+        font-size: 18px;
+    }
+
+    .plusbtn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .row-firstcolor2 {
+        display: none;
+    }
+
+    .selctionboxcontainer {
+        padding-left: 0px;
+margin-left: 15px;
+        gap: 20px;
+        margin-bottom: 25px;
+
+    }
+
+    .selectionbox {
+        width: 115px;
+        height: 115px;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .selectparagraph p {
+        font-size: 15px;
+    }
+    .sectionicon{
+        width: 30px;
+        height: 30px;
     }
 }
 

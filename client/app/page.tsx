@@ -175,6 +175,7 @@ export default function Home() {
                 alt="My Profile"
                 width={45}
                 height={50}
+                className="plusbtn"
               />
               <h2>Passionate about building smart, real-world solutions</h2>
             </div>
@@ -184,6 +185,7 @@ export default function Home() {
                 alt="My Profile"
                 width={45}
                 height={50}
+                className="plusbtn"
               />
               <h2>Skilled in Python, MERN, and Flutter</h2>
             </div>
@@ -193,6 +195,7 @@ export default function Home() {
                 alt="My Profile"
                 width={45}
                 height={50}
+                className="plusbtn"
               />
               <h2>AI & Machine Learning Enthusiast</h2>
             </div>
@@ -210,6 +213,7 @@ export default function Home() {
               alt="My Profile"
               width={55}
               height={60}
+              className="sectionicon"
             />
             <div className="selectparagraph">
               <p>Project</p>
@@ -222,6 +226,7 @@ export default function Home() {
               alt="My Profile"
               width={55}
               height={60}
+              className="sectionicon"
             />
             <div className="selectparagraph">
               <p>UI/UX</p>
@@ -235,6 +240,7 @@ export default function Home() {
                 alt="My Profile"
                 width={55}
                 height={60}
+                className="sectionicon"
               />
               <div className="selectparagraph">
                 <p>Content</p>
