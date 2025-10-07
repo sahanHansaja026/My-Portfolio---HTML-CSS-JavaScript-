@@ -497,6 +497,9 @@ input[type="email"] {
     font-size: 25px;
     font-family: var(--font-inder);
 }
+.myhideprofile2 {
+    display: none;
+}
 
 .submitbtn {
     width: 100%;
@@ -570,6 +573,7 @@ input[type=submit] {
     opacity: 1;
     transform: translateY(0) scale(1);
 }
+
 
 /* 📱 Mobile Nav */
 @media (width <=874px) {
@@ -675,15 +679,14 @@ input[type=submit] {
 
     .selctionboxcontainer {
         padding-left: 0px;
-margin-left: 15px;
+        margin-left: 25px;
         gap: 20px;
         margin-bottom: 25px;
-
     }
 
     .selectionbox {
-        width: 115px;
-        height: 115px;
+        width: 105px;
+        height: 105px;
         flex-direction: column;
         gap: 2px;
     }
@@ -691,12 +694,142 @@ margin-left: 15px;
     .selectparagraph p {
         font-size: 15px;
     }
-    .sectionicon{
+
+    .sectionicon {
         width: 30px;
         height: 30px;
     }
-}
 
-.myhideprofile2 {
-    display: none;
+    .row-firstcolor3 {
+        height: 550px;
+    }
+
+    .fourthcontent {
+        padding-left: 0px;
+        margin-left: 15px;
+        width: 280px;
+    }
+
+    .fourthcontent h6 {
+        font-size: 13px;
+    }
+
+    .fourthcontent h3 {
+        font-size: 20px;
+    }
+
+    .fourthcontent a {
+        font-size: 20px;
+    }
+
+    .imagecontainers1 {
+        margin-left: 0px;
+        margin-top: 150px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        margin-bottom: -180px;
+    }
+
+    .seconimage {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .thirdimage {
+        padding-left: 200px;
+        margin-top: 10px;
+    }
+
+    .subimages {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fifthcontent {
+        padding-left: 0px;
+        margin-left: 15px;
+    }
+
+    .fifthcontent h6 {
+        font-size: 13px;
+    }
+
+    .fifthcontent h3 {
+        font-size: 20px;
+    }
+
+    .fifthcontent a {
+        font-size: 20px;
+    }
+
+    .row-secondcolor2 {
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-list {
+        padding-left: 0px;
+        margin-left: 15px;
+    }
+
+    .blog-date {
+        font-size: 10px;
+    }
+
+    .blog-title {
+        font-size: 15px;
+    }
+
+    .blog-arrow {
+        font-size: 15px;
+    }
+
+    .contactpage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sixthcontent {
+        padding-left: 0px;
+        margin-left: 15px;
+    }
+
+    .sixthcontent h6 {
+        font-size: 13px;
+    }
+
+    .sixthcontent h3 {
+        font-size: 20px;
+    }
+
+    .sixthcontent a {
+        font-size: 20px;
+    }
+
+    .row-firstcolor6 {
+        height: 550px;
+    }
+
+    .contactinfo {
+        padding-left: 0px;
+        margin-left: 15px;
+    }
+
+    .contactinfo h3 {
+        font-size: 20px;
+    }
+    form .lable{
+        font-family: 15px;
+    }
+
+    input[type=submit] {
+        font-family: 20px;
+    }
 }
