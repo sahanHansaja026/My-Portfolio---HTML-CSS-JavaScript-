@@ -1,92 +1,123 @@
-# My Portfolio
+# 🌐 My Portfolio (Next.js + TypeScript)
 
-A personal portfolio website built using HTML, CSS, and JavaScript. This website showcases my projects, skills, and contact information, providing a professional and interactive way to present my work.
+A modern and responsive **personal portfolio website** built using **Next.js (App Router)**, **TypeScript**, and **CSS**.
+This website showcases my projects, skills, and contact information in a professional and interactive way.
 
 ![Homepage](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/web.png)
 
-## Features
+---
 
-- **Responsive Design**: The website is fully responsive and works on all devices.
-- **Modern Layout**: Clean and modern design using HTML and CSS.
-- **Interactive Elements**: JavaScript for smooth scrolling and dynamic content.
-- **Contact Form**: A functional contact form to reach out to you.
+## ✨ Features
 
-## Tech Stack
+* ⚡ **Next.js App Router** — Modern and optimized routing system.
+* 💻 **TypeScript** — Ensures type safety and scalability.
+* 🎨 **Normal CSS Styling** — Styled using global and modular CSS files.
+* 🧩 **Reusable Components** — Clean and organized code structure.
+* 📱 **Responsive Design** — Works across all screen sizes.
+* 📧 **Contact Form** — Simple form for communication.
 
-- **HTML**: Markup language for structuring the website.
-- **CSS**: Stylesheet language for designing the website.
-- **JavaScript**: Programming language for interactive elements.
+---
 
-## Project Structure
+## 🧠 Tech Stack
+
+| Category   | Technology                |
+| ---------- | ------------------------- |
+| Framework  | **Next.js (App Router)**  |
+| Language   | **TypeScript**            |
+| Styling    | **CSS**                   |
+| Deployment | **Vercel** / GitHub Pages |
+
+---
+
+## 📁 Project Structure
 
 ```plaintext
 .
-├── index.html
-├── style.css
-├── sahan hansaja CV .pdf
-├── work.html
-├── images/
-│   ├── image(jpg and png)
+├── app/
+│   ├── page.tsx            # Main homepage
+│   ├── layout.tsx          # Root layout (header/footer)
+│   ├── globals.css         # Global CSS styles     
 │
+├── public/
+│   ├── images/
+│   │   ├── web.png
+│   │   ├── image1.png
+│   │   ├── image2.png
+│   │   └── image3.png
+│
+├── package.json
+├── tsconfig.json
+├── next.config.js
 └── README.md
 ```
 
-- **index.html**: Main HTML file for the structure of the website.
-- **style.css**: CSS file for styling the website.
-- **script.js**: JavaScript file for interactivity.
-- **images/**: Folder containing images used in the website.
+---
 
-## Installation
+## ⚙️ Getting Started
 
-1. **Clone the repository:**
+1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/your-username/my-portfolio-nextjs.git
+cd my-portfolio-nextjs
 ```
 
-2. **Open `index.html` in your web browser:**
+2. **Install Dependencies**
 
-No additional setup is required. Simply open `index.html` in any web browser.
+```bash
+npm install
+```
 
-## Usage
+3. **Run Development Server**
 
-### Navigation
+```bash
+npm run dev
+```
 
-Navigate through the website using the navigation bar to jump to different sections like About, Projects, and Contact.
+4. **Open in Browser**
 
-### Projects Section
-
-Showcase your projects with images, descriptions, and links to live demos or repositories.
-
-### Contact Form
-
-Users can fill out the contact form to send you messages directly.
-
-## Images
-
-### Homepage
-
-![Homepage](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/web.png)
-
-### About Section
-
-![About Section](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/image1.png)
-
-### Projects Section
-
-![Projects Section](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/image2.png)
-
-### Contact Section
-
-![Contact Section](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/image3.png)
-
-## Contributing
-
-Contributions are welcome! Please fork this repository and submit pull requests.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Visit **[http://localhost:3000](http://localhost:3000)** to view your portfolio.
 
 ---
+
+## 🧭 Usage
+
+### 🔹 Navigation
+
+Use the navigation bar to move between **Home**, **About**, **Projects**, and **Contact** pages.
+
+### 🔹 Projects Section
+
+Showcases your projects with descriptions and links to live demos or GitHub repositories.
+
+### 🔹 Contact Section
+
+Simple form that allows visitors to reach out directly.
+
+---
+
+## 🖼️ Screenshots
+
+| Section  | Preview                                                                                                          |
+| -------- | ---------------------------------------------------------------------------------------------------------------- |
+| Homepage | ![Homepage](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/web.png)            |
+| About    | ![About Section](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/image1.png)    |
+| Projects | ![Projects Section](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/image2.png) |
+| Contact  | ![Contact Section](https://github.com/sahanHansaja026/My-Portfolio---HTML-CSS-JavaScript-/blob/main/image3.png)  |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork this repository and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+
+Would you like me to add a short **“About Me”** section to this README (for example, describing you as a full stack developer and data scientist)? It would make the README more personal and professional for GitHub.
