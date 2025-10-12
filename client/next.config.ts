@@ -8,10 +8,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: isProd ? '/My-Portfolio---HTML-CSS-JavaScript-' : '',
-  basePath: isProd ? '/My-Portfolio---HTML-CSS-JavaScript-' : '',
+  assetPrefix: isProd ? '/My-Portfolio' : '',
+  basePath: isProd ? '/My-Portfolio' : '',
   env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? '/My-Portfolio---HTML-CSS-JavaScript-' : '',
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/My-Portfolio' : '',
   },
 };
 

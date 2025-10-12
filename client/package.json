@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true,"homepage": "https://sahanHansaja026.github.io/My-Portfolio---HTML-CSS-JavaScript-",
+  "private": true,"homepage": "https://sahanHansaja026.github.io/My-Portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
